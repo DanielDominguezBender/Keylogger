@@ -205,4 +205,4 @@ with Listener(on_press=on_press, on_release=on_release) as listener:
 
 ## What's next?
 
-The idea is to improve this script or rewrite form zero once I improved my coding skills :nerd_face:
+The idea is to improve this script or rewrite from zero once I improve my coding skills :nerd_face:
