@@ -1,7 +1,9 @@
 # Keylogger
 
 ## Description:
-A simple keylogger that I had to create during my Master Degree studies.
+A simple keylogger that I had to create during my Master Degree studies.  
+You will have a copy of the code in the repository, even if there the description of the different parts is in Spanish (:pray:sorry:pray:).  
+Please note that I created this code for educational purposes only.
 
 ## What is a KEYLOGGER?
 
@@ -201,11 +203,6 @@ with Listener(on_press=on_press, on_release=on_release) as listener:
     listener.join()
 ```
 
+## What's next?
 
-
-## How to run it?
-
-## Visual example
-
-
-The idea is to improve this script ...
+The idea is to improve this script or rewrite form zero once I improved my coding skills :nerd_face:
