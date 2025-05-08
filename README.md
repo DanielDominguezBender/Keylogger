@@ -1,4 +1,32 @@
-# Keylogger
+## 🛡️ Keylogger in Python (Educational Project)
+
+> ⚠️ **Important Notice:** This project is intended solely for educational purposes and cybersecurity awareness. It must not be used in any real environment without the explicit consent of the affected user.
+
+This script demonstrates how a basic keylogger works using Python and the `pynput` library, with the goal of **understanding how these threats operate** to improve our defense capabilities.
+
+---
+
+### ⚙️ What does this script do?
+- Captures keystrokes from the keyboard.
+- Saves them into a text file (`log.txt`).
+- Does not hide, auto-run, or send any data externally.
+
+---
+
+### 🧠 Why is this important?
+Understanding how keyloggers work helps you:
+- Detect them using security tools.
+- Analyze suspicious code behavior.
+- Create more effective prevention policies.
+
+---
+
+### 🛡️ Legal Warning
+This code **must not be used to monitor or log the activity of others without their explicit consent**. Misuse of this software may violate local, regional, or national laws. The author is not responsible for any misuse of this project.
+
+---
+
+# Keylogger Project
 
 ## Description:
 A simple keylogger that I had to create during my Master Degree studies.  
